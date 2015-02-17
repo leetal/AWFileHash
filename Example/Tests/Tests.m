@@ -41,15 +41,15 @@ describe(@"these should pass", ^{
     });
 
     // File tests
-    it(@"can calculate MD5 of nsdata", ^{
+    it(@"can calculate MD5 of FileAtPath", ^{
         expect([AWFileHash md5HashOfFileAtPath:_filePath]).to.equal(@"e2b73ef09ebf853047fe1dcb6ad0862a");
     });
 
-    it(@"can calculate SHA1 of nsdata", ^{
+    it(@"can calculate SHA1 of FileAtPath", ^{
         expect([AWFileHash sha1HashOfFileAtPath:_filePath]).to.equal(@"91f90cc1f585fb6ebe6980954a33e2da27257edf");
     });
 
-    it(@"can calculate SHA512 of nsdata", ^{
+    it(@"can calculate SHA512 of FileAtPath", ^{
         expect([AWFileHash sha512HashOfFileAtPath:_filePath]).to.equal(@"a428ad0b1ef9b09b2c7477cce93b0ccd052c70423810778f042dc003c1941129c54d4e82d11b76dad2dddd881cd6fda0063a57793ea95aafcb54a57721391a57");
     });
 
