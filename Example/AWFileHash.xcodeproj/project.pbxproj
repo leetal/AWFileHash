@@ -199,7 +199,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		86AA9B5C70FE2AF3CDE377EE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

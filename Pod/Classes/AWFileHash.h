@@ -14,8 +14,10 @@
 
 @interface AWFileHash : NSObject
 
-+ (NSString *)md5HashOfFileAtPath:(NSString *)filePath;
 + (NSString *)md5HashOfData:(NSData *)data;
++ (NSString *)sha1HashOfData:(NSData *)data;
++ (NSString *)sha512HashOfData:(NSData *)data;
++ (NSString *)md5HashOfFileAtPath:(NSString *)filePath;
 + (NSString *)sha1HashOfFileAtPath:(NSString *)filePath;
 + (NSString *)sha512HashOfFileAtPath:(NSString *)filePath;
 + (NSString *)md5HashOfALAssetRepresentation:(ALAssetRepresentation *)alAssetRep;

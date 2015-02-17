@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AWFileHash: bd94b6c832bc6a2e644aff12a6744c1a1a72d51b
+  AWFileHash: 605f75c29352c095ceb2d46204cdb9df7fa4448c
   Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
   Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
 

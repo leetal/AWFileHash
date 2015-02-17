@@ -44,9 +44,10 @@ context.finalFunction     = (FileHashFinalFunction)&CC_##hashAlgorithmName##_Fin
 context.digestLength      = CC_##hashAlgorithmName##_DIGEST_LENGTH;                     \
 context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
 
-
 @implementation AWFileHash
 
+#pragma mark -
+#pragma mark private class helpers
 + (NSString *)hashOfFileAtPath:(NSString *)filePath withComputationContext:(FileHashComputationContext *)context {
     NSString *result = nil;
     CFURLRef fileURL = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)filePath, kCFURLPOSIXPathStyle, (Boolean)false);
@@ -243,10 +244,48 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
     return result;
 }
 
+#pragma mark -
+#pragma mark public class accessors
 + (NSString *)md5HashOfData:(NSData *)data {
     FileHashComputationContext context;
     FileHashComputationContextInitialize(context, MD5);
     return [self hashOfNSData:data withComputationContext:&context];
+}
+
++ (NSString *)sha1HashOfData:(NSData *)data {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, SHA1);
+    return [self hashOfNSData:data withComputationContext:&context];
+}
+
++ (NSString *)sha512HashOfData:(NSData *)data {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, SHA512);
+    return [self hashOfNSData:data withComputationContext:&context];
+}
+
++ (NSString *)md5HashOfFileAtPath:(NSString *)filePath {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, MD5);
+    return [self hashOfFileAtPath:filePath withComputationContext:&context];
+}
+
++ (NSString *)sha1HashOfFileAtPath:(NSString *)filePath {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, SHA1);
+    return [self hashOfFileAtPath:filePath withComputationContext:&context];
+}
+
++ (NSString *)sha512HashOfFileAtPath:(NSString *)filePath {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, SHA512);
+    return [self hashOfFileAtPath:filePath withComputationContext:&context];
+}
+
++ (NSString *)md5HashOfALAssetRepresentation:(ALAssetRepresentation *)alAssetRep {
+    FileHashComputationContext context;
+    FileHashComputationContextInitialize(context, MD5);
+    return [self hashOfALAssetRepresentation:alAssetRep withComputationContext:&context];
 }
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
@@ -273,29 +312,5 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
     return nil;
 }
 #endif
-
-+ (NSString *)md5HashOfFileAtPath:(NSString *)filePath {
-    FileHashComputationContext context;
-    FileHashComputationContextInitialize(context, MD5);
-    return [self hashOfFileAtPath:filePath withComputationContext:&context];
-}
-
-+ (NSString *)md5HashOfALAssetRepresentation:(ALAssetRepresentation *)alAssetRep {
-    FileHashComputationContext context;
-    FileHashComputationContextInitialize(context, MD5);
-    return [self hashOfALAssetRepresentation:alAssetRep withComputationContext:&context];
-}
-
-+ (NSString *)sha1HashOfFileAtPath:(NSString *)filePath {
-    FileHashComputationContext context;
-    FileHashComputationContextInitialize(context, SHA1);
-    return [self hashOfFileAtPath:filePath withComputationContext:&context];
-}
-
-+ (NSString *)sha512HashOfFileAtPath:(NSString *)filePath {
-    FileHashComputationContext context;
-    FileHashComputationContextInitialize(context, SHA512);
-    return [self hashOfFileAtPath:filePath withComputationContext:&context];
-}
 
 @end
