@@ -45,7 +45,7 @@ context.digestLength      = CC_##hashAlgorithmName##_DIGEST_LENGTH;             
 context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
 
 
-@implementation FileHash
+@implementation AWFileHash
 
 + (NSString *)hashOfFileAtPath:(NSString *)filePath withComputationContext:(FileHashComputationContext *)context {
     NSString *result = nil;

@@ -12,7 +12,7 @@
 #import <Photos/Photos.h>
 #endif
 
-@interface FileHash : NSObject
+@interface AWFileHash : NSObject
 
 + (NSString *)md5HashOfFileAtPath:(NSString *)filePath;
 + (NSString *)md5HashOfData:(NSData *)data;
