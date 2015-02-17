@@ -13,6 +13,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		8566F2FD1A93533E00023721 /* flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 8566F2FC1A93533E00023721 /* flower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		8566F2FC1A93533E00023721 /* flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = flower.png; path = Graphics/flower.png; sourceTree = "<group>"; };
 		FC2ACC5D81830150CAA73630 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				8566F2FB1A93531C00023721 /* Resources */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -108,6 +111,14 @@
 				FC2ACC5D81830150CAA73630 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8566F2FB1A93531C00023721 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8566F2FC1A93533E00023721 /* flower.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		F070B653E62ADF217FEFAEC5 /* Pods */ = {
@@ -179,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8566F2FD1A93533E00023721 /* flower.png in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
