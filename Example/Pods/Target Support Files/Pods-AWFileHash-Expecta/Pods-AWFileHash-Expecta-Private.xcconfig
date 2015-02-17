@@ -1,0 +1,6 @@
+#include "Pods-AWFileHash-Expecta.xcconfig"
+FRAMEWORK_SEARCH_PATHS = ${PODS_AWFILEHASH_EXPECTA_FRAMEWORK_SEARCH_PATHS}
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/Expecta" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AWFileHash" "${PODS_ROOT}/Headers/Public/Expecta" "${PODS_ROOT}/Headers/Public/Specta"
+OTHER_LDFLAGS = ${PODS_AWFILEHASH_EXPECTA_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
