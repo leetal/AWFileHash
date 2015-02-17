@@ -52,17 +52,6 @@ describe(@"these should pass", ^{
     it(@"can calculate SHA512 of nsdata", ^{
         expect([AWFileHash sha512HashOfFileAtPath:_filePath]).to.equal(@"a428ad0b1ef9b09b2c7477cce93b0ccd052c70423810778f042dc003c1941129c54d4e82d11b76dad2dddd881cd6fda0063a57793ea95aafcb54a57721391a57");
     });
-    
-    /*it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"should do some stuff asynchronously", ^{
-        waitUntil(^(DoneCallback done) {
-            // Async example blocks need to invoke done() callback.
-            done();
-        });
-    });*/
 
     afterEach(^{
     });
@@ -71,6 +60,7 @@ describe(@"these should pass", ^{
         _data = nil;
         _filePath = nil;
     });
+
 });
 
 SpecEnd

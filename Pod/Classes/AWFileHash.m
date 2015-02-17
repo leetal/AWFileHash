@@ -289,7 +289,7 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
 }
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000
-// This will have a much larger memory impact than ALAsset
+// This will have a much higher memory impact than ALAsset
 + (NSString *)md5HashOfPHAsset:(PHAsset *)phAsset {
     FileHashComputationContext context;
     FileHashComputationContextInitialize(context, MD5);
@@ -309,7 +309,7 @@ context.hashObjectPointer = (uint8_t **)&hashObjectFor##hashAlgorithmName
     }
 
     //return [self hashOfALAssetRepresentation:alAssetRep withComputationContext:&context];
-    return nil;
+    return nil; // As of now always return nil, until implementation is complete!
 }
 #endif
 
