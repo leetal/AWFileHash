@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'AWFileHash', :exclusive => true do
+  pod "AWFileHash", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
