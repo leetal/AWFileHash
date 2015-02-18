@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/AWFileHash.svg?style=flat)](http://cocoadocs.org/docsets/AWFileHash)
 [![Platform](https://img.shields.io/cocoapods/p/AWFileHash.svg?style=flat)](http://cocoadocs.org/docsets/AWFileHash)
 
+A security library that supports md5, sha1 and sha512 hashes. Performs all calculations chunked to reduce memory impact (does not apply to PHAsset as of now).
+
+Returns a hex of the result.
+
 ## Requirements
 
 iOS7+ is required. For PHAsset support iOS8+ is required.
