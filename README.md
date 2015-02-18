@@ -51,7 +51,7 @@ Download the .zip, unpack it and draw the files "AWFileHash.{m,h}" into XCode. M
 * Add proper documentation
 * Add more tests that conform to the standards
 
-## Syllabus
+## Definitions
 
 Specifications: 
 * MD5: [http://www.ietf.org/rfc/rfc1321.txt]
