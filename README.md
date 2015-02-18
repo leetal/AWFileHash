@@ -11,7 +11,7 @@ Returns a hex of the result.
 
 ## Requirements
 
-iOS7+ is required. For PHAsset support iOS8+ is required.
+iOS5+ is required. If using cocoapods, min version in podfile is iOS7. For PHAsset support iOS8+ is required.
 
 ## Usage/Examples
 ```objectivec
