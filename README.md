@@ -35,7 +35,7 @@ For SHA1 or SHA512 support, just replace the "md5" in the names to "sha1" or "sh
 
 Make sure to include AWFileHash.h where you want to use the lib.
 
-### Cocoapods
+### CocoaPods
 AWFileHash is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
