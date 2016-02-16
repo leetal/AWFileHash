@@ -42,7 +42,7 @@ it, simply add the following line to your Podfile:
     pod "AWFileHash"
 
 ### Manual
-Download the .zip, unpack it and draw the files "AWFileHash.{m,h}" into XCode. Make sure to add them to your target bundle also.
+Download the .zip, unpack it and draw the files "AWFileHash.{m,h}" into Xcode. Make sure to add them to your target bundle also.
 
 ## TODO
 
