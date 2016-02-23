@@ -25,6 +25,7 @@ print(hash)
 ```
 
 #### Objective-C
+Make sure to include AWFileHash.h where you want to use the lib.
 ```objectivec
 // Filepath (file accessible on disk)
 NSString *_filePath = ...
@@ -44,9 +45,6 @@ NSString *md5 = [AWFileHash md5HashOfALAssetRepresentation:_assetRep];
 For SHA1, SHA512 or CRC32b  support, just replace the "md5" in the names to "sha1", "sha512" or "crc32" respectively.
 
 ## Installation
-
-Make sure to include AWFileHash.h where you want to use the lib.
-
 ### Cocoapods
 AWFileHash is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
