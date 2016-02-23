@@ -11,9 +11,20 @@ Returns a hex of the result.
 
 ## Requirements
 
-iOS5+ is required. If using cocoapods, min version in podfile is iOS7. For PHAsset support iOS8+ is required.
+iOS5+ is required. If using cocoapods, min version in podfile is iOS8. For PHAsset support iOS8+ is required.
 
 ## Usage/Examples
+#### Swift
+```swift
+import AWFileHash
+...
+...
+let data:NSData = NSData(data: "AWFileHash", length: 10)
+let hash = AWFileHash.md5HashOfData(data)
+print(hash)
+```
+
+#### Objective-C
 ```objectivec
 // Filepath (file accessible on disk)
 NSString *_filePath = ...
@@ -27,6 +38,7 @@ NSString *md5 = [AWFileHash md5HashOfData:_data];
 ALAsset *_asset = ...
 ALAssetRepresentation *_assetRep = [_asset defaultRepresentation];
 NSString *md5 = [AWFileHash md5HashOfALAssetRepresentation:_assetRep];
+...
 ```
 
 For SHA1, SHA512 or CRC32b  support, just replace the "md5" in the names to "sha1", "sha512" or "crc32" respectively.
