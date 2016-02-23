@@ -11,7 +11,7 @@ Returns a hex of the result.
 
 ## Requirements
 
-iOS5+ is required. If using cocoapods, min version in podfile is iOS8. For PHAsset support iOS8+ is required.
+iOS5+ is required. If using cocoapods or Swift, min version in podfile/build is iOS8. For PHAsset support iOS8+ is required.
 
 ## Usage/Examples
 #### Swift
