@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0ECAB226AB051575F119616F /* Pods_AWFileHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3141166B67CA9BBD75A096F0 /* Pods_AWFileHash.framework */; };
+		3B15E4D11C7C9303007C9227 /* flower2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B15E4D01C7C9303007C9227 /* flower2.jpg */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,6 +21,7 @@
 		02C11E145DFE885122DC5C06 /* Pods-AWFileHash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.debug.xcconfig"; sourceTree = "<group>"; };
 		2F0E79FC4148DFEB572350D1 /* Pods-AWFileHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.release.xcconfig"; sourceTree = "<group>"; };
 		3141166B67CA9BBD75A096F0 /* Pods_AWFileHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWFileHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B15E4D01C7C9303007C9227 /* flower2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = flower2.jpg; path = Graphics/flower2.jpg; sourceTree = "<group>"; };
 		4DFD4CF296B63FA3D0CF1586 /* AWFileHash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AWFileHash.podspec; path = ../AWFileHash.podspec; sourceTree = "<group>"; };
 		4E77FFD8D25E38CAB6651D7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AWFileHash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWFileHash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8566F2FC1A93533E00023721 /* flower.png */,
+				3B15E4D01C7C9303007C9227 /* flower2.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B15E4D11C7C9303007C9227 /* flower2.jpg in Resources */,
 				8566F2FD1A93533E00023721 /* flower.png in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
