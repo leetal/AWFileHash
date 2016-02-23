@@ -1,0 +1,6 @@
+framework module Pods_AWFileHash {
+  umbrella header "Pods-AWFileHash-umbrella.h"
+
+  export *
+  module * { export * }
+}

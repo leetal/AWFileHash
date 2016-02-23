@@ -1,7 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
 
-
-target 'AWFileHash', :exclusive => true do
+target 'AWFileHash' do
   pod "AWFileHash", :path => "../"
 
   pod 'Specta'

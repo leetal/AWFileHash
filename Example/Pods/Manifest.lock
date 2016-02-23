@@ -1,7 +1,7 @@
 PODS:
   - AWFileHash (0.1.0)
-  - Expecta (0.3.2)
-  - Specta (0.3.2)
+  - Expecta (1.0.5)
+  - Specta (1.0.5)
 
 DEPENDENCIES:
   - AWFileHash (from `../`)
@@ -13,8 +13,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AWFileHash: ac765d1023f36e1add172bbb20fcfdb6ccb46af5
-  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
-  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
+  AWFileHash: d1321555428e4b0bf903133f4ec8fc07c14755c0
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
-COCOAPODS: 0.35.0
+PODFILE CHECKSUM: 2f7b3fe91603af784f38ab59b90dfd85b2d4ae68
+
+COCOAPODS: 1.0.0.beta.3

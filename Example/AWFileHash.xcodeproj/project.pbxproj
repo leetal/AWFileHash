@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA0974A17BA965CF4341926 /* libPods-AWFileHash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 391DFEDEF653BD182E01C89F /* libPods-AWFileHash.a */; };
+		0ECAB226AB051575F119616F /* Pods_AWFileHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3141166B67CA9BBD75A096F0 /* Pods_AWFileHash.framework */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17C50832852BAA25C45C2A17 /* Pods-AWFileHash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.debug.xcconfig"; sourceTree = "<group>"; };
-		391DFEDEF653BD182E01C89F /* libPods-AWFileHash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AWFileHash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F14BF1CB768D695BA579871 /* Pods-AWFileHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.release.xcconfig"; sourceTree = "<group>"; };
+		02C11E145DFE885122DC5C06 /* Pods-AWFileHash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0E79FC4148DFEB572350D1 /* Pods-AWFileHash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWFileHash.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash.release.xcconfig"; sourceTree = "<group>"; };
+		3141166B67CA9BBD75A096F0 /* Pods_AWFileHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWFileHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFD4CF296B63FA3D0CF1586 /* AWFileHash.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AWFileHash.podspec; path = ../AWFileHash.podspec; sourceTree = "<group>"; };
 		4E77FFD8D25E38CAB6651D7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AWFileHash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWFileHash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,13 +44,22 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				0AA0974A17BA965CF4341926 /* libPods-AWFileHash.a in Frameworks */,
+				0ECAB226AB051575F119616F /* Pods_AWFileHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054C23FC5213F9861B894458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C11E145DFE885122DC5C06 /* Pods-AWFileHash.debug.xcconfig */,
+				2F0E79FC4148DFEB572350D1 /* Pods-AWFileHash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +68,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				F070B653E62ADF217FEFAEC5 /* Pods */,
+				054C23FC5213F9861B894458 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +88,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				391DFEDEF653BD182E01C89F /* libPods-AWFileHash.a */,
+				3141166B67CA9BBD75A096F0 /* Pods_AWFileHash.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,15 +130,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		F070B653E62ADF217FEFAEC5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				17C50832852BAA25C45C2A17 /* Pods-AWFileHash.debug.xcconfig */,
-				3F14BF1CB768D695BA579871 /* Pods-AWFileHash.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,11 +137,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "AWFileHash" */;
 			buildPhases = (
-				86AA9B5C70FE2AF3CDE377EE /* Check Pods Manifest.lock */,
+				250F5ADBC407439FC64665AC /* Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				67F92795A11B5198DCCEF97E /* Copy Pods Resources */,
+				795C089C1E5F5D0A5D1693EE /* Embed Pods Frameworks */,
+				10DB9FA7086346A9A2A9FAFB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,7 +199,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		67F92795A11B5198DCCEF97E /* Copy Pods Resources */ = {
+		10DB9FA7086346A9A2A9FAFB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,8 +212,9 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		86AA9B5C70FE2AF3CDE377EE /* Check Pods Manifest.lock */ = {
+		250F5ADBC407439FC64665AC /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +227,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		795C089C1E5F5D0A5D1693EE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AWFileHash/Pods-AWFileHash-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -284,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -326,7 +343,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17C50832852BAA25C45C2A17 /* Pods-AWFileHash.debug.xcconfig */;
+			baseConfigurationReference = 02C11E145DFE885122DC5C06 /* Pods-AWFileHash.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -348,7 +365,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F14BF1CB768D695BA579871 /* Pods-AWFileHash.release.xcconfig */;
+			baseConfigurationReference = 2F0E79FC4148DFEB572350D1 /* Pods-AWFileHash.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
