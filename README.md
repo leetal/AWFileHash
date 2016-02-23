@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/AWFileHash.svg?style=flat)](http://cocoadocs.org/docsets/AWFileHash)
 [![Platform](https://img.shields.io/cocoapods/p/AWFileHash.svg?style=flat)](http://cocoadocs.org/docsets/AWFileHash)
 
-A security library that supports md5, sha1 and sha512 hashes. Performs all calculations chunked to reduce memory impact (does not apply to PHAsset as of now).
+A security library that supports md5, sha1 and sha512 hashes, as well as CRC32b checksums. Performs all calculations chunked to reduce memory impact (does not apply to PHAsset as of now).
 
 Returns a hex of the result.
 
@@ -29,7 +29,7 @@ ALAssetRepresentation *_assetRep = [_asset defaultRepresentation];
 NSString *md5 = [AWFileHash md5HashOfALAssetRepresentation:_assetRep];
 ```
 
-For SHA1 or SHA512 support, just replace the "md5" in the names to "sha1" or "sha512".
+For SHA1, SHA512 or CRC32b  support, just replace the "md5" in the names to "sha1", "sha512" or "crc32" respectively.
 
 ## Installation
 
