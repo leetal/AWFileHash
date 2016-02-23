@@ -59,7 +59,7 @@ Specifications:
 
 ## Author
 
-Alexander Widerberg, alexander.widerberg@cloudme.com
+Alexander Widerberg, widerbergaren [at] gmail.com
 
 ## License
 
