@@ -65,7 +65,7 @@ Download the .zip, unpack it and draw the files "AWFileHash.{m,h}" into XCode. M
 
 Specifications: 
 * MD5: [http://www.ietf.org/rfc/rfc1321.txt]
-* SHA1 & SHA512: [http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf] 
+* SHA1 & SHA512: [http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf] 
 
 ## Author
 
